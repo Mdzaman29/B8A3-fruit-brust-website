@@ -4,10 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B8A3 fruit brust website</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- tailwind custom classes -->
+`   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'color-primary': '#F85559;',
+          }
+        }
+      }
+    }
+  </script>   
+ <!-- font family -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+    
 </head>
 <body>
     <header>
-        
+        <nav class="px-32">
+          <div class="navbar bg-base-100 bg-color-primary rounded-full">
+            <div class="flex-1 text-white">
+                <a class="btn btn-ghost normal-case text-sm">Home</a>   
+                <a class="btn btn-ghost normal-case text-sm">About Us</a>
+                <a class="btn btn-ghost normal-case text-sm">Shop</a>
+                <a class="btn btn-ghost normal-case text-sm">All Fruits</a>
+                <div class="flex items-center ml-12">
+                <img class="w-8" src="./images/logo.png" alt="">
+                <h2 class="text-3xl text-white">Fruit Burst</h2>
+            </div>
+            </div>
+            <div class="flex-none gap-2 pr-5 relative">
+                <div class="form-control flex items-end" >
+                <input type="text" placeholder="Search here" class="input input-bordered w-24 lg:w-80 h-9"/>
+                <img src="./images/magnifying-glass-solid.svg" alt="" class="w-6 absolute top-3 pr-2 ">
+                </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- slider and carousel -->
+        <div class="carousel w-4/5 lg:ml-32 mt-10">
+ <div id="slide1" class="carousel-item relative w-full">
+    <div class="absolute left-72 text-white bg-blend-overlay">
+        <h1 class="text-5xl mt-16 mb-5">
+            Exotic tastes at your <br> <span class="ml-24">doorstep</span>
+        </h1>
+        <p class="ml-16">We supply highly quality organic products</p>
+        <button class="btn bg-color-primary hover:bg-color-primary mt-5 ml-32 text-white">Shop Now</button>
+    </div>
+    <img src="./images/banner1.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+        <!-- slider-2 -->
+  <div id="slide2" class="carousel-item relative w-full">
+    <div class="absolute left-72 text-white bg-blend-overlay">
+        <h1 class="text-5xl mt-16 mb-5">
+            Exotic tastes at your <br> <span class="ml-24">doorstep</span>
+        </h1>
+        <p class="ml-16">We supply highly quality organic products</p>
+        <button class="btn bg-color-primary hover:bg-color-primary mt-5 ml-32 text-white">Shop Now</button>
+    </div>
+    <img src="./images/banner2.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+        <!-- slider-3 -->
+  <div id="slide3" class="carousel-item relative w-full">
+    <div class="absolute left-72 text-white bg-blend-overlay">
+        <h1 class="text-5xl mt-16 mb-5">
+            Exotic tastes at your <br> <span class="ml-24">doorstep</span>
+        </h1>
+        <p class="ml-16">We supply highly quality organic products</p>
+        <button class="btn bg-color-primary hover:bg-color-primary mt-5 ml-32 text-white">Shop Now</button>
+    </div>
+    <img src="./images/banner3.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+        <!-- slider-4 -->
+  <div id="slide4" class="carousel-item relative w-full">
+    <div class="absolute left-72 text-white bg-blend-overlay">
+        <h1 class="text-5xl mt-16 mb-5">
+            Exotic tastes at your <br> <span class="ml-24">doorstep</span>
+        </h1>
+        <p class="ml-16">We supply highly quality organic products</p>
+        <button class="btn bg-color-primary hover:bg-color-primary mt-5 ml-32 text-white">Shop Now</button>
+    </div>
+    <img src="./images/banner4.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+
     </header>
 </body>
 </html>
